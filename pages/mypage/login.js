@@ -1,5 +1,6 @@
 import Header from '../../components/header'
 import Link from 'next/link'
+import Head from 'next/head'
 import router from 'next/router'
 function Login(){
   function toIndex(){
@@ -7,6 +8,9 @@ function Login(){
   }
   return(
     <div>
+      <Head>
+        <title>Login</title>
+      </Head>
       <Header>login</Header>
       <Link href="/mypage/register">  
       {
